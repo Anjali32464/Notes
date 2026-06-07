@@ -1,0 +1,78 @@
+body{
+  background-color: #031610;
+  
+  
+}
+
+h1{
+  margin: 0px;
+  font-size: 55px;
+  color: #FFD6B8;
+  text-align: center;
+}
+
+h2{
+  color: #FFDCDC;
+  text-align: center;
+  font-size: 30px;
+}
+
+textarea{
+  width: 800px;
+  height: 400px;
+  padding: 10px;
+  resize: none;
+  color: #FFD6B8;
+  font-size: 25px;
+  background-color: transparent;
+    
+}
+
+.text-box {
+  margin: 0 auto;
+  width: fit-content;
+  height: 100vh;
+  font-size: 60px;
+  text-align: center;
+}
+
+
+li{
+  font-size: 25px;
+  background-color: #043532;
+  font-weight: bold;
+  color:antiquewhite;
+}
+
+
+
+.button_e button{
+  font-size: 20px;
+  cursor: pointer;
+  border: solid 2px black;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -590px;
+
+    width: 550px;
+    height: 100%;
+
+    background-color: rgba(4, 25, 14, 0.81);
+
+    transition: 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+#menu-tab {
+    cursor: pointer;
+    z-index: 1000;
+  
+}
+
+
+

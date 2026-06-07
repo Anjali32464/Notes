@@ -2,36 +2,84 @@
 <html>
 <head>
     <title>Notes App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='notes.css')}}">
 </head>
+
+
+ 
 <body>
 
-<h1>My Notes</h1>
+<button id="menu-tab" >☰</button>
 
-<form method="POST">
-    <input type="text" name="note" placeholder="Enter a note">
+<h1>My Notes</h1>
+<hr>
+
+<form class="text-box"  method="POST">
+    <textarea type="text" name="note" placeholder="Enter a note"></textarea>
     <button type="submit">Add</button>
 </form>
 
-<hr>
 
-<h2>Saved Notes</h2>
 
-<ul>
-    {% for note in notes %}
-        <li>
-            {{ note[1] }}
+<div id="sidebar" >
+
+  <h2>Saved Notes</h2>
+
+  <ul>
+
+      {% for note in notes %}
+          <li>
+              {{ note[1][:50] }}
        
-            <form action="/edit/{{note[0]}}" method="GET"  style="display:inline;">
-                <button type="submit">Edit</button>
-            </form>
+              <form class="button_e"  action="/edit/{{note[0]}}" method="GET"  style="display:inline;">
+                  <button type="submit">Edit</button>
+              </form>
 
 
-            <form action="/delete/{{note[0]}}" method="POST"  style="display:inline;">
-                <button type="submit">DELETE</button>
-            </form>
-        </li>
-    {% endfor %}
-</ul>
+              <form class="button_e"  action="/delete/{{note[0]}}" method="POST"  style="display:inline;">
+                  <button type="submit">DELETE</button>
+              </form>
+          </li>
+      {% endfor %}
+  </ul>
+
+</div>
+
+<script>
+ let sidebar=document.getElementById("sidebar");
+ let menutab=document.getElementById("menu-tab");
+
+ isOpen=false;
+
+ menutab.addEventListener("click",function(){
+
+    if(isOpen){
+        sidebar.style.left = "-590px";
+        isOpen= false;
+    }else {
+        sidebar.style.left="0px";
+        isOpen = true;
+    }
+
+    event.stopImmediatePropagation();
+ 
+ });
+
+sidebar.addEventListener('click', function(){
+    console.log('clicked sidebar');
+    event.stopImmediatePropagation();
+})
+
+document.addEventListener('click', function(){
+
+    console.log("body clicked")
+    sidebar.style.left = "-590px";
+})
+
+
+
+
+ </script>
 
 </body>
 </html>
