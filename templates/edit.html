@@ -6,15 +6,17 @@
 </head>
 <body>
 
+
+
+
 <h1>Edit Note</h1>
 
 <form method="POST">
 
-    <input
+    <textarea
         type="text"
         name="note"
-        value="{{ note[1][0] }}"
-    >
+        >{{ note[1] }}</textarea>
 
     <button type="submit">
         Save

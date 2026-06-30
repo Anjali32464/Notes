@@ -29,11 +29,9 @@
 
       {% for note in notes %}
           <li>
+            <a class="list-link" href="/read/{{note[0]}}">
               {{ note[1][:50] }}
-       
-              <form class="button_e"  action="/edit/{{note[0]}}" method="GET"  style="display:inline;">
-                  <button type="submit">Edit</button>
-              </form>
+            </a>
 
 
               <form class="button_e"  action="/delete/{{note[0]}}" method="POST"  style="display:inline;">

@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background-color: #3B2A24;
+}
+
+a{
+    color: bisque;
+
+}
+
+p{
+    color:darksalmon;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+}
+
+.top{
+    position:relative;
+}
+
+h1{
+    display:block;
+    margin: 0px auto;
+    font-size: 50px;
+    color:lightcoral;
+}
+
+
+.edit-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    background-color: rgb(112, 53, 26);
+    color:aliceblue;
+}
+
+.del-btn{
+    position: absolute;
+    right: 80px;
+    margin-right: 10px;
+    top:0;
+    font-size: 30px;
+    background-color: rgb(112, 53, 26);
+    color:aliceblue;
+    
+}

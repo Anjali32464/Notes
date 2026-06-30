@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read View</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='read.css')}}">
+</head>
+<body>
+
+<div class="top">
+
+    <h1 style="display:inline;" >Note</h1>
+
+    <form   action="/edit/{{note[0]}}" method="GET"  style="display:inline;">
+        <button class="edit-btn" type="submit">Edit</button>
+    </form>
+
+    <form class="button_e"  action="/delete/{{note[0]}}" method="POST"  style="display:inline;">
+        <button class="del-btn" type="submit">DELETE</button>
+    </form>
+
+</div>
+
+
+
+<p>{{ note[1] }}</p>
+
+</form>
+
+</body>
+</html>

@@ -18,8 +18,8 @@ h2{
 }
 
 textarea{
-  width: 800px;
-  height: 400px;
+  width: 1000px;
+  height: 600px;
   padding: 10px;
   resize: none;
   color: #FFD6B8;
@@ -36,6 +36,10 @@ textarea{
   text-align: center;
 }
 
+.list-link{
+  color:darkseagreen;
+}
+
 
 li{
   font-size: 25px;
@@ -50,6 +54,10 @@ li{
   font-size: 20px;
   cursor: pointer;
   border: solid 2px black;
+}
+
+.button_e button:hover{
+  background-color: #043532;
 }
 
 #sidebar {

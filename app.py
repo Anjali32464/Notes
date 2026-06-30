@@ -85,7 +85,7 @@ def edit_note(id):
 
         return render_template('edit.html', note=note)
 
-    if request.method == 'POST':
+    else:
 
         updated_text = request.form.get('note')
 
@@ -99,8 +99,25 @@ def edit_note(id):
         conn.commit()
         conn.close()
 
-        return redirect('/notes')
+        return redirect(f'/read/{id}')
 
+
+
+@app.route('/read/<int:id>')
+def read_note(id):
+
+    conn = sqlite3.connect('notes.db')
+
+    note = conn.execute(
+        "SELECT * FROM notes WHERE id = ?",
+        (id,)
+    ).fetchone()
+
+    conn.close()
+
+    return render_template('read.html', note=note)
+
+    
 
 
 

@@ -1,4 +1,20 @@
 body{
-  background-color: #833417;
+  background-color: #3B2A24;
   text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  color:lightcoral
+}
+
+textarea{
+  width: 1000px;
+  height: 600px;
+  padding: 10px;
+  resize: none;
+  color: #FFD6B8;
+  font-size: 25px;
+  background-color: transparent;
+    
 }
