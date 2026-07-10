@@ -7,9 +7,21 @@
 <body>
 
 
+<div class="ad">
 
+<button class="back" onclick="history.back()">◀</button>
+
+<form  action="/">
+    <button class="home-pg" type="submit"> 🏠 </button>
+</form>
 
 <h1>Edit Note</h1>
+<hr>
+
+</div>
+
+
+
 
 <form method="POST">
 
@@ -17,8 +29,8 @@
         type="text"
         name="note"
         >{{ note[1] }}</textarea>
-
-    <button type="submit">
+    <br>
+    <button class="save" type="submit">
         Save
     </button>
 

@@ -1,20 +1,13 @@
 body{
   background-color: #031610;
-  
-  
 }
 
-h1{
-  margin: 0px;
-  font-size: 55px;
-  color: #FFD6B8;
-  text-align: center;
-}
 
 h2{
   color: #FFDCDC;
   text-align: center;
   font-size: 30px;
+  text-decoration: underline;
 }
 
 textarea{
@@ -32,33 +25,34 @@ textarea{
   margin: 0 auto;
   width: fit-content;
   height: 100vh;
-  font-size: 60px;
+  font-size: 60px; 
   text-align: center;
+  margin-top: 30px;
 }
 
+.add{
+  font-size: 30px;
+}
+
+
 .list-link{
-  color:darkseagreen;
+  color:black;
+}
+
+.list-link:hover{
+  text-decoration: dotted;
+  color: white;
 }
 
 
 li{
   font-size: 25px;
-  background-color: #043532;
+  background-color: #0b5752;
   font-weight: bold;
   color:antiquewhite;
 }
 
 
-
-.button_e button{
-  font-size: 20px;
-  cursor: pointer;
-  border: solid 2px black;
-}
-
-.button_e button:hover{
-  background-color: #043532;
-}
 
 #sidebar {
     position: fixed;
@@ -73,14 +67,36 @@ li{
     transition: 0.3s;
     padding: 20px;
     box-sizing: border-box;
+    line-height: 1.5;
 
+}
+
+.main{
+  position: relative;
+}
+
+h1{
+  margin: 0px;
+  font-size: 55px;
+  color:#FFD6B8;
+  text-align: center;
 }
 
 #menu-tab {
-    cursor: pointer;
-    z-index: 1000;
-  
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 20px;
+ 
 }
 
 
+button{
+    transition: 0.3s;
+}
+button:hover{
+  background: #37686f;
+  transform: scale(1.1);
+}
 

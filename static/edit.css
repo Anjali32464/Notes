@@ -1,20 +1,76 @@
 body{
-  background-color: #3B2A24;
+  background-color: rgb(7, 27, 17);
   text-align: center;
 }
 
 h1{
   font-size: 50px;
-  color:lightcoral
+  color:lightcoral;
+  text-decoration: underline;
+  margin: 0;
+  margin-top: 40px;
+  
 }
 
 textarea{
   width: 1000px;
   height: 600px;
   padding: 10px;
+  padding-top: 30px;
   resize: none;
   color: #FFD6B8;
   font-size: 25px;
   background-color: transparent;
+  border-color: transparent;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
     
+}
+
+.save {
+  font-size: 30px;
+  background-color:rgb(38, 52, 65) ;
+  
+}
+
+.ad{
+  position: relative;
+}
+
+.back{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left:50px;
+  top:0px;
+  padding-top: 0px;
+  background-color: rgb(38, 52, 65);
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  
+}
+
+.home-pg{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left:10px;
+  top:0px;
+  background-color: rgb(38, 52, 65);
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  
+
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover{
+  background: lightcoral;
+  transform: scale(1.1);
 }

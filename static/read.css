@@ -1,50 +1,92 @@
 body{
     text-align: center;
-    background-color: #3B2A24;
+    background-color: rgb(7, 27, 17);
 }
 
 a{
     color: bisque;
-
 }
 
 p{
-    color:darksalmon;
+    padding-top: 30px;
+    color:#FFD6B8;
     font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 1000px;
     height: 600px;
     text-align: center;
+    margin: auto;
+    line-height: 1.6;
 }
 
 .top{
     position:relative;
+    padding-top: 30px;
 }
 
 h1{
-    display:block;
-    margin: 0px auto;
+    margin-top: 100px;
+    text-decoration: underline;
     font-size: 50px;
     color:lightcoral;
 }
 
-
 .edit-btn{
     position: absolute;
-    right: 0;
+    width: 50px;
+    height: 50px;
+    right: 90px;
+    margin-top: 30px;
     top: 0;
     font-size: 30px;
-    background-color: rgb(112, 53, 26);
+    background-color: rgb(38, 52, 65) ;
     color:aliceblue;
 }
 
+
 .del-btn{
     position: absolute;
-    right: 80px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    margin-top: 30px;   
     top:0;
     font-size: 30px;
-    background-color: rgb(112, 53, 26);
+    background-color: rgb(38, 52, 65);
+    color:aliceblue;    
+}
+
+.home-pg{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: rgb(38, 52, 65);
+}
+
+.back {
+    position:absolute;
+    margin-top: 30px;
+    left: 60px;
+    top:0;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color:rgb(38, 52, 65);
     color:aliceblue;
-    
+    margin-left: 20px;
+}
+
+
+button{
+    transition: 0.3s;
+}
+button:hover{
+  background-color: lightcoral;
+  background: lightcoral;
+  transform: scale(1.1);
 }

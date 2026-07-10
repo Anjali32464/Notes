@@ -8,15 +8,28 @@
 
 <div class="top">
 
-    <h1 style="display:inline;" >Note</h1>
+
+    <form  action="/">
+        <button class="home-pg" type="submit"> 🏠 </button>
+    </form>
+
+
+   
+
+    <button class="back" onclick="history.back()">◀</button>
+
+   
 
     <form   action="/edit/{{note[0]}}" method="GET"  style="display:inline;">
-        <button class="edit-btn" type="submit">Edit</button>
+        <button class="edit-btn" type="submit">🖋</button>
     </form>
 
     <form class="button_e"  action="/delete/{{note[0]}}" method="POST"  style="display:inline;">
-        <button class="del-btn" type="submit">DELETE</button>
+        <button class="del-btn" type="submit">🗑</button>
     </form>
+
+    <h1 style="display:inline;" >Note</h1>
+    <hr>
 
 </div>
 

@@ -15,16 +15,9 @@ def init_db():
 init_db()
 
 
-
-
-
 @app.route('/')
 def home():
     return render_template('home.html')
-
-
-
-
 
 
 @app.route('/notes',methods=['GET','POST'])
@@ -105,6 +98,7 @@ def edit_note(id):
 
 @app.route('/read/<int:id>')
 def read_note(id):
+    
 
     conn = sqlite3.connect('notes.db')
 
