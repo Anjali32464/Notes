@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+</head>
+
+<body>
+<h2>Enter Password</h2>
+
+<div class="input-area">
+<form action="/" method="POST">
+    
+    
+    <lable  for="password">Password</lable>
+    <br>
+     
+    <div class="input-bt">
+    <input id="password" type="password" name="password" placeholder="Password" required>
+
+    <button onclick="togglebt()" type="button" style="display:inline;">👁</button>
+
+    <button type="submit" style="display:inline;">🔓</button>
+    </div> 
+
+
+</form>
+</div>
+
+
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color:red;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+
+
+<script>
+
+function togglebt(){
+    let p= document.getElementById("password")
+    if (p.type==="password"){
+        p.type="text";
+    } else {
+        p.type="password";
+    }
+}
+</script>
+
+    
+</body>
+</html>

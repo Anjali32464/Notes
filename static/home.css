@@ -1,6 +1,6 @@
 body{
   text-align: center;
-  background-color: #3B2A24;
+  background-color: black;
   font-family: Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ button{
   transition: 0.3s;
 }
 button:hover{
-  background: rgb(89, 120, 149);
+  background: rgb(111, 149, 184);
   transform: scale(1.1);
 }
 

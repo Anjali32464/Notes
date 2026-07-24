@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: black;
+
+}
+
+h2{
+    font-size: 50px;
+    color: burlywood;
+}
+
+.input-area{
+    text-align: center;
+    width: fit-content;
+    font-size: 30px; 
+    border-style: groove;
+    margin: auto;
+    color: burlywood;
+    padding: 0px 10px 10px 10px;
+}
+
+.input-bt button{
+    display: flex;
+    align-items: center;
+
+}
+
+#password{
+    font-size: 20px;
+}
+
+.input-bt button{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: auto;
+}

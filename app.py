@@ -1,7 +1,10 @@
 import sqlite3
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session,flash
 
 app = Flask(__name__)
+app.secret_key="abcd1234"
+
+app_password="1234"
 
 
 
@@ -15,9 +18,25 @@ def init_db():
 init_db()
 
 
-@app.route('/')
-def home():
+@app.route('/', methods=['GET','POST'])
+def login():
+    if request.method == 'POST':
+        password = request.form.get("password")
+        if password == app_password:
+            session["logged_in"] = True
+            return render_template('home.html')
+        
+        else:
+            flash("Incorrect Password")
+            return redirect("/")
+
+    return render_template("login.html")   
+
+
+@app.route('/home')
+def dashboard():
     return render_template('home.html')
+
 
 
 @app.route('/notes',methods=['GET','POST'])

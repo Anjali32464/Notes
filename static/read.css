@@ -7,12 +7,14 @@ a{
     color: bisque;
 }
 
+
 p{
+    white-space: pre-wrap;
     padding-top: 30px;
     color:#FFD6B8;
     font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 1000px;
+    width: 100%;
     height: 600px;
     text-align: center;
     margin: auto;
